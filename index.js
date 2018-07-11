@@ -8,7 +8,7 @@ module.exports = function SyncEmotes(dispatch) {
     
     command.add('sync', () => {
         enabled = !enabled;
-        command.message('(sync-emotes) ' + (enabled === true ? 'Enabled' : 'Disabled');
+        command.message('(sync-emotes) ' + (enabled === true ? 'Enabled' : 'Disabled'));
     });
 
     dispatch.hook('C_SET_TARGET_INFO', 1, event => {
